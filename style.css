@@ -1,31 +1,76 @@
 /* Sets a background color for the whole page */
 body {
-    background-color: #f0f0f0;
+    background-color: #FFDE59;
     font-family: sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
 }
-
+header {
+    background-color: #333; /* Dark header for contrast */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
 /* Styles the main heading */
 h1 {
-    color: navy;
-    text-align: center;
-    padding-top: 20px;
+    margin: 0;
+    padding: 20px 0;
 }
 
 /* Styles the main content area */
 main {
-    padding: 20px;
+    padding: 20px;  
     text-align: center;
 }
+.tab-container {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    gap: 10px;
+    background-color: white; /* Added for visibility */
+    padding: 0 10px;
+}
+.tab-link {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.tab-link:hover {
+  background-color: #ddd;
+}
 
-/* Styles the footer */
+.tab-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Hide tab content by default */
+.tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-bottom: 60px;
+}
 footer {
-    background-color: #ddd;
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.tab-content {
+    animation: fadeEffect 0.5s;
+}
+

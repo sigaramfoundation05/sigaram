@@ -3,23 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Sigaram Foundation</title>
     <!-- Links our CSS file to this HTML file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Sigaram Foundation</h1>
     </header>
 
     <main>
-        <p>This paragraph is styled using CSS and JavaScript will add an alert!</p>
+        <p>Volunteer Now!</p>
         <button id="myButton">Click Me!</button>
     </main>
 
     <footer>
         <p>&copy; 2026 My Website</p>
     </footer>
+<!-- Tab Buttons -->
+<div class="tab-container">
+  <button class="tab-link active" onclick="openTab(event, 'About')">About Us</button>
+  <button class="tab-link" onclick="openTab(event, 'Work')">Our Work</button>
+  <button class="tab-link" onclick="openTab(event, 'Tribes')">Our Tribes</button>
+  <button class="tab-link" onclick="openTab(event, 'Contact')">Contact Us</button>
+  <button class="tab-link" onclick="openTab(event, 'Glimpse')">Glimpse</button>
+</div>
+
+<!-- Tab Content -->
+<div id="About" class="tab-content" style="display:block;">
+  <h3>About Us</h3>
+  <p>Sigaram Foundation is a enablement and awareness ecosystem partner in India.</p>
+</div>
+
+<div id="Work" class="tab-content">
+  <h3>Our Work</h3>
+  <p>Details about projects and initiatives.</p>
+</div>
+
+<div id="Tribes" class="tab-content">
+  <h3>Our Tribes</h3>
+  <p>Meet our various developer groups.</p>
+</div>
+
+<div id="Contact" class="tab-content">
+  <h3>Contact Us</h3>
+  <p>Get in touch with the team.</p>
+</div>
+
+<div id="Glimpse" class="tab-content">
+  <h3>Glimpse of our Work</h3>
+  <p>Photos and highlights from previous events.</p>
+</div>
 
     <!-- Links our JavaScript file to this HTML file -->
     <script src="script.js"></script>
